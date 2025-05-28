@@ -1,5 +1,8 @@
 name: deploy on push
-on: [push]
+on:
+  push:
+    branches:
+      - main   # 仅限main分支触发部署
 jobs:
   deploy-app:
     runs-on: ubuntu-latest
